@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.Signup"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/signuptext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/signup_title"
+            android:textColor="@color/defaultcolor"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_above="@id/loginrel" />
+
+        <RelativeLayout
+            android:id="@+id/loginrel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            >
+            <EditText
+                android:id="@+id/usernameinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:singleLine="true"
+                android:hint="@string/username_edittxt"
+                />
+            <EditText
+                android:id="@+id/passwordinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:singleLine="true"
+                android:layout_below="@id/usernameinput"
+                android:hint="@string/password_edittxt"
+                />
+            <EditText
+                android:id="@+id/retypepasswordinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:singleLine="true"
+                android:layout_below="@id/passwordinput"
+                android:hint="@string/repassword_edittxt"
+                />
+            <Button
+                android:id="@+id/signupbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_btn"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/defaultcolor"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/retypepasswordinput"
+                />
+            <TextView
+                android:id="@+id/loginlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/loginlinktext"
+                android:textSize="20sp"
+                android:layout_below="@id/signupbutton"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

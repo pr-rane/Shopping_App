@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:background="#DDDADA">
+
+    <RelativeLayout
+        android:id="@+id/productFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <Button
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/filter_icon"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/productFilter"
+        android:layout_margin="2.5dp"
+        />
+    <com.example.shopping_app.Sliding
+        android:id="@+id/filterSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/rdogrpFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/nameAscRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name A-Z"
+            android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/nameDscRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameAscRadio"
+                android:gravity="center"
+                android:text="Name Z-A"
+                android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/priceAscRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameDscRadio"
+            android:text="Price Low to High"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/priceDscRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/priceAscRadio"
+                    android:text="Price High to Low"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF" />
+        </RadioGroup>
+        </RelativeLayout>
+    </com.example.shopping_app.Sliding>
+
+
+</RelativeLayout>

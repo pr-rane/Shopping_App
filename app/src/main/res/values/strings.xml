@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">shopping app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signup_title">Signup</string>
+    <string name="username_edittxt">Username</string>
+    <string name="password_edittxt">Password</string>
+    <string name="repassword_edittxt">Retype-Password</string>
+    <string name="signup_btn">Signup</string>
+    <string name="loginlinktext">Already have account?Click here</string>
+    <string name="addcart_btn">Add To Cart</string>
+    <string name="login_title">Login</string>
+    <string name="login_btn">Login</string>
+    <string name="signuplinktext">Not Have Account?click here</string>
+</resources>
